@@ -5,14 +5,14 @@ To setup this project on c9:
 * Restart psql server: `sudo service postgresql restart`
 * Run `rake db:create` and `rake db:schema:dump`
 * Follow https://gist.github.com/amolkhanorkar/8706915 to fix the problem below:
->> `PG::Error: ERROR: new encoding (UTF8) is incompatible`
+> `PG::Error: ERROR: new encoding (UTF8) is incompatible`
 * Run `rake db:migrate`
 
 ======================================
      Solution to error above
 ======================================
 
-### Follow steps below to resolve the problem:
+Follow steps below to resolve the problem:
 
 First, we need to drop template1. Templates can’t be dropped, so we first modify it so t’s an ordinary database:
 
