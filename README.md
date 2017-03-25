@@ -9,11 +9,7 @@ To setup this project on c9:
 * Run `rake db:migrate`
 
 
-======================================
-     Solution to error above
-======================================
-
-Follow steps below to resolve the problem:
+#### Follow steps below to resolve the above problem:
 
 First, we need to drop template1. Templates can’t be dropped, so we first modify it so t’s an ordinary database:
 
