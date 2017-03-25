@@ -8,6 +8,7 @@ To setup this project on c9:
 > `PG::Error: ERROR: new encoding (UTF8) is incompatible`
 * Run `rake db:migrate`
 
+
 ======================================
      Solution to error above
 ======================================
