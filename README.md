@@ -6,7 +6,7 @@ To setup this project on c9:
 * Run `rake db:create` and `rake db:schema:dump`
 * Follow https://gist.github.com/amolkhanorkar/8706915 to fix the problem below:
 > `PG::Error: ERROR: new encoding (UTF8) is incompatible`
-* Run `rake db:migrate`
+* Run `rake db:migrate` to create the database tables with the respective fields.
 
 
 #### Follow steps below to resolve the above problem:
