@@ -19,6 +19,12 @@
       <%= @user.location %>
     </h5>
   <% end %>
+  <% if @user.school_or_work.present? %>
+    <h5>
+      <%= fa_icon 'map-marker' %>
+      <%= @user.school_or_work %>
+    </h5>
+  <% end %>
   <br>
   <div class="text-center">
     <% unless is_current_user?(@user) %>
