@@ -46,6 +46,7 @@ class UsersController < ApplicationController
   end
 
   def set_user
-    @user = User.friendly.find(params[:id])
+    # @user = User.friendly.find(params[:id])
+    @user = params[:id] ? User.friendly.find(params[:id]) : current_user
   end
 end
