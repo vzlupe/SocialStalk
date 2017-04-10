@@ -2,12 +2,8 @@
 <div id="user-<%= user.id %>" class="row">
   <div class="col-lg-8">
     <%= render 'shared/avatar', user: user %>
-    <h5 class="name"><%= link_to user.name, user %></h5>
-  </div>
-  <div class="col-lg-4">
-    <div class="follow">
-      <%= render 'follows/form', user: user %>
-    </div>
+    <%= render 'follows/form', user: user %>
+    <!--<h5 class="name"><%= link_to user.name, user %></h5>-->
   </div>
 </div>
 <br>
